@@ -1,0 +1,24 @@
+﻿<Window x:Class="HoraAssistant.FatherPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HoraAssistant"
+        mc:Ignorable="d"
+        Title="HoraAssistant" Height="550" Width="800" Closing="ClosingAssistant" Icon="H.ico" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.04*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" Width="500" x:Name="FatherMenuItem" HorizontalAlignment="Left" VerticalAlignment="Top" Background="White">
+            <MenuItem Header="Головна" Click="MenuClickItem"/>
+            <MenuItem Header="Історія"/>
+            <MenuItem Header="Додати дію"/>
+            <MenuItem Header="Дії"/>
+            <MenuItem Header="Налаштування"/>
+            <MenuItem Header="Допомога"/>
+        </Menu>
+        <Frame Grid.Row="1" x:Name="PanelPages" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+    </Grid>
+</Window>
