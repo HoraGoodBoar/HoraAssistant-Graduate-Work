@@ -19,8 +19,8 @@ namespace HoraAssistant {
             }
             if (answer.Count == 0)
                 answer.Add(" ");
+            ++DataRecognition.CountRequest;
             return answer;
         }
-        
     }
 }

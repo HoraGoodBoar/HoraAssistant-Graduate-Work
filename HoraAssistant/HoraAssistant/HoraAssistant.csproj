@@ -63,9 +63,10 @@
     <Compile Include="Assistant\Sound\ControlRecording.cs" />
     <Compile Include="Assistant\Sound\DataAssistant.cs" />
     <Compile Include="Assistant\Sound\RecordingSound.cs" />
-    <Compile Include="PagesWPF\Main.xaml.cs">
+    <Compile Include="PagesWPF\Main\Main.xaml.cs">
       <DependentUpon>Main.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PagesWPF\Main\PageMainData.cs" />
     <Compile Include="Threads\ControlThreads.cs" />
     <Page Include="FatherPage.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -79,7 +80,7 @@
       <DependentUpon>FatherPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PagesWPF\Main.xaml">
+    <Page Include="PagesWPF\Main\Main.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

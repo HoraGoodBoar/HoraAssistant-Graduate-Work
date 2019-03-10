@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\dimak\Desktop\Diploma\HoraAssistant\HoraAssistant\obj\Debug\
+C:\Users\dimak\Documents\GitHub\HoraAssistant\HoraAssistant\HoraAssistant\obj\Debug\
 HoraAssistant
 none
 false
 DEBUG;TRACE
-C:\Users\dimak\Desktop\Diploma\HoraAssistant\HoraAssistant\App.xaml
-255655378
+C:\Users\dimak\Documents\GitHub\HoraAssistant\HoraAssistant\HoraAssistant\App.xaml
+21812624483
 
-17-525866693
-12279570581
-FatherPage.xaml;PagesWPF\Main.xaml;
+18-943180028
+12-873633585
+FatherPage.xaml;PagesWPF\Main\Main.xaml;
 
-True
+False
 

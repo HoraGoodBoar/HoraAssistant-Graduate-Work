@@ -13,7 +13,6 @@
         </Grid.RowDefinitions>
         <Menu Grid.Row="0" Width="500" x:Name="FatherMenuItem" HorizontalAlignment="Left" VerticalAlignment="Top" Background="White">
             <MenuItem Header="Головна" Click="MenuClickItem"/>
-            <MenuItem Header="Історія"/>
             <MenuItem Header="Додати дію"/>
             <MenuItem Header="Дії"/>
             <MenuItem Header="Налаштування"/>
