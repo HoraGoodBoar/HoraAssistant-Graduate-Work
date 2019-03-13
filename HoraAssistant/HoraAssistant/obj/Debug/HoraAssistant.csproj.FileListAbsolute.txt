@@ -36,3 +36,5 @@ C:\Users\dimak\Documents\GitHub\HoraAssistant\HoraAssistant\HoraAssistant\obj\De
 C:\Users\dimak\Documents\GitHub\HoraAssistant\HoraAssistant\HoraAssistant\obj\Debug\HoraAssistant.pdb
 C:\Users\dimak\Documents\GitHub\HoraAssistant\HoraAssistant\HoraAssistant\obj\Debug\PagesWPF\Main\Main.g.cs
 C:\Users\dimak\Documents\GitHub\HoraAssistant\HoraAssistant\HoraAssistant\obj\Debug\PagesWPF\Main\Main.baml
+C:\Users\dimak\Documents\GitHub\HoraAssistant\HoraAssistant\HoraAssistant\obj\Debug\PagesWPF\AddEvent\AddEvent.g.cs
+C:\Users\dimak\Documents\GitHub\HoraAssistant\HoraAssistant\HoraAssistant\obj\Debug\PagesWPF\AddEvent\AddEvent.baml

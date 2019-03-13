@@ -63,6 +63,13 @@
     <Compile Include="Assistant\Sound\ControlRecording.cs" />
     <Compile Include="Assistant\Sound\DataAssistant.cs" />
     <Compile Include="Assistant\Sound\RecordingSound.cs" />
+    <Compile Include="Event\EventControl.cs" />
+    <Compile Include="Event\EventData.cs" />
+    <Compile Include="Event\EventModel.cs" />
+    <Compile Include="Event\Tasks\TaskControl.cs" />
+    <Compile Include="PagesWPF\AddEvent\AddEvent.xaml.cs">
+      <DependentUpon>AddEvent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PagesWPF\Main\Main.xaml.cs">
       <DependentUpon>Main.xaml</DependentUpon>
     </Compile>
@@ -80,6 +87,10 @@
       <DependentUpon>FatherPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PagesWPF\AddEvent\AddEvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PagesWPF\Main\Main.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

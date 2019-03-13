@@ -15,7 +15,6 @@
             <Setter Property="Control.Height" Value="50" />
             <Setter Property="Control.FontWeight" Value="Bold" />
         </Style>
-            
     </Page.Resources>
     <Grid Background="White" >
         <Grid.ColumnDefinitions>
@@ -29,14 +28,14 @@
                 <RowDefinition />
                 <RowDefinition />
             </Grid.RowDefinitions>
-            
-            <Label Style="{StaticResource MainStyle}" Grid.Row="0" Content="Events : " VerticalAlignment="Center" />
+
+            <Label Style="{StaticResource MainStyle}" Grid.Row="0" Content="Подій : " VerticalAlignment="Center" />
             <TextBox Margin="0,0,10,0" x:Name="TextBoxEvent" Style="{StaticResource MainStyle}" Grid.Row="0" Text="0" HorizontalAlignment="Right" Width="250" TextAlignment="Center" />
 
-            <Label Style="{StaticResource MainStyle}" Grid.Row="1" Content="Sounds : " VerticalAlignment="Center" />
+            <Label Style="{StaticResource MainStyle}" Grid.Row="1" Content="Звуків : " VerticalAlignment="Center" />
             <TextBox Margin="0,0,10,0" x:Name="TextBoxSound" Style="{StaticResource MainStyle}" Grid.Row="1" Text="0" Width="250" HorizontalAlignment="Right" TextAlignment="Center"/>
             
-            <Label Style="{StaticResource MainStyle}" Grid.Row="2" Content="Time : " VerticalAlignment="Center"  />
+            <Label Style="{StaticResource MainStyle}" Grid.Row="2" Content="Час : " VerticalAlignment="Center"/>
             <TextBox Margin="0,0,10,0" x:Name="TextBoxTime" Style="{StaticResource MainStyle}" Grid.Row="2" Text="0" HorizontalAlignment="Right" Width="250" TextAlignment="Center" />
         </Grid>
         <ListView  x:Name="HistoryWords" Grid.Column="2" Background="DarkGreen" Foreground="White" FontSize="20"/>

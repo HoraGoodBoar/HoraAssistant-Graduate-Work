@@ -16,16 +16,18 @@ namespace HoraAssistant{
     public partial class FatherPage : Window{
         public FatherPage(){
             InitializeComponent();
-            ControlSignal.Start();
+            EventControl.LoadData();
+            //ControlSignal.Start();
         }
 
         private void ClosingAssistant(object sender, System.ComponentModel.CancelEventArgs e){
-            ControlSignal.Stop();
+            //ControlSignal.Stop();
         }
 
         private void MenuClickItem (object sender, RoutedEventArgs e){
             switch ((sender as MenuItem).Header) {
                 case "Головна": { PanelPages.Content = new Main(); }break;
+                case "Додати дію": { PanelPages.Content = new AddEvent(); } break;
             }
         }
     }

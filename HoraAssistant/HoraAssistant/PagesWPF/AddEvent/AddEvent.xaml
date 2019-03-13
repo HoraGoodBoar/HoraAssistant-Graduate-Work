@@ -1,0 +1,59 @@
+﻿<Page x:Class="HoraAssistant.AddEvent"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HoraAssistant"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddEvent">
+    <Page.Resources>
+        <Style x:Name="MainStyle" x:Key="MainStyle">
+            <Setter Property="Control.Background" Value="White" />
+            <Setter Property="Control.Foreground" Value="DarkGreen" />
+            <Setter Property="Control.FontSize" Value="20" />
+            <Setter Property="Control.FontWeight" Value="Bold" />
+        </Style>
+    </Page.Resources>
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  Width="1*"/>
+            <ColumnDefinition  Width="1*"/>
+            <ColumnDefinition  Width="1*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition />
+                <RowDefinition Height="0.1*"/>
+            </Grid.RowDefinitions>
+            <Label Style="{StaticResource MainStyle}" Content="Ім'я : " Width="100" HorizontalAlignment="Left"/>
+            <TextBox x:Name="TextBoxName" Style="{StaticResource MainStyle}" Width="200" HorizontalAlignment="Right" TextAlignment="Center" />
+
+            <TextBox x:Name="TextBoxDescription" Style="{StaticResource MainStyle}" Grid.Row="1" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+
+            <Button x:Name="BtnAdd" Style="{StaticResource MainStyle}" Content="Додати" Grid.Row="2" Click="BtnAddClick"/>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition />
+                <RowDefinition Height="0.1*"/>
+            </Grid.RowDefinitions>
+            <ComboBox x:Name="ComboBoxNameEvents" SelectionChanged="ComboBoxNameEventsSelectionChanged" Style="{StaticResource MainStyle}"/>
+            <Grid x:Name="GridInfoEvent" Style="{StaticResource MainStyle}" Grid.Row="1"/>
+            <Button x:Name="BtnAddTask" Style="{StaticResource MainStyle}" Grid.Row="2" Content="Добавити задачу" Click="BtnAddTaskClick"/>
+        </Grid>
+
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="0.09*"/>
+            </Grid.RowDefinitions>
+            <StackPanel x:Name="StackPanelTask" Style="{StaticResource MainStyle}"/>
+            <Button x:Name="BtnDeleteTask" Style="{StaticResource MainStyle}" Grid.Row="1" Content="Видалити" Click="BtnDeleteTaskClick"/>
+        </Grid>
+    </Grid>
+</Page>
