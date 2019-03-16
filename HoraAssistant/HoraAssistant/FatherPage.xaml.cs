@@ -18,10 +18,19 @@ namespace HoraAssistant{
             InitializeComponent();
             EventControl.LoadData();
             ControlSignal.Start();
+            TaskBarControl.StartTaskBar();
         }
 
         private void ClosingAssistant(object sender, System.ComponentModel.CancelEventArgs e){
-            ControlSignal.Stop();
+            if (!TaskBarData.taskbar.Visible){
+                e.Cancel = true;
+                TaskBarData.taskbar.Visible = true;
+                this.Visibility = Visibility.Hidden;
+            }
+            else{
+                ControlSignal.Stop();
+                ControlThreads.Clear();
+            }
         }
 
         private void MenuClickItem (object sender, RoutedEventArgs e){

@@ -31,7 +31,8 @@ namespace HoraAssistant{
             }
         }
         public static void Clear() {
-            ArrThread["XMLLoad"].Abort();
+            if(ContaintName("XMLLoad"))
+                ArrThread["XMLLoad"].Abort();
         }
     }
 }

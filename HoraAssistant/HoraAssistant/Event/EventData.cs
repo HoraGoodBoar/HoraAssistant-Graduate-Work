@@ -33,6 +33,7 @@ namespace HoraAssistant{
         }
         public static void LoadNameEvents() {
             NameEvents.Add("Відкрити в Chrome");
+            NameEvents.Add("Виключити/Деактивувати ПК");
         }
     }
 }
