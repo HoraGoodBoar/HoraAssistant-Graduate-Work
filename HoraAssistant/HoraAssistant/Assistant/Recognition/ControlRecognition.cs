@@ -12,8 +12,13 @@ namespace HoraAssistant{
         }
         public static void StartTranslate() {
             string word = Start(DataAssistant.FolderNameFile+ (DataAssistant.CountSound - 1).ToString() + DataAssistant.NameFileWriter)[0];
-            if (word!="#?#"&& word!=" ")
-                PageMainData.Words.Add( word+" | "+"нерозпізнано");
+            if (word != "#?#" && word != " "){
+                string log = "";
+                List<string> answers = EventControl.StartEvent(word);
+                for (int i = 0; i < answers.Count; ++i)
+                    log += i.ToString() + " : " + answers[i] + "; ";
+                PageMainData.Words.Add(word + " | " + (log==""?"нерозпізнано":log));
+            }
         }
     }
 }

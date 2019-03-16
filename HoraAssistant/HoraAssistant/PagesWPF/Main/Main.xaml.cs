@@ -25,7 +25,7 @@ namespace HoraAssistant{
         }
 
         private void TimerTickOne(object sender, EventArgs e){
-            TextBoxEvent.Text = "Скільки дій виконано";
+            TextBoxEvent.Text = EventData.CountTrue.ToString();
             TextBoxSound.Text = DataRecognition.CountRequest.ToString();
             TextBoxTime.Text  = DateTime.Parse((DateTime.Now - PageMainData.StartWorkTime).ToString()).ToLongTimeString();
         }

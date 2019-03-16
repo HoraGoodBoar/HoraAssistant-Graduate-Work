@@ -4,10 +4,7 @@ using System.Linq;
 using System.Text;
 
 namespace HoraAssistant{
-    public static class TaskControl{
-        public static void StartFunction(string NameFunction)
-        {
-
-        }
+    public static class PageAddEventData{
+        public static EventModel AddStorage=new EventModel();
     }
 }

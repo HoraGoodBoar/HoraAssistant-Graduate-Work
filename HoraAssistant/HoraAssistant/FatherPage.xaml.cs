@@ -17,11 +17,11 @@ namespace HoraAssistant{
         public FatherPage(){
             InitializeComponent();
             EventControl.LoadData();
-            //ControlSignal.Start();
+            ControlSignal.Start();
         }
 
         private void ClosingAssistant(object sender, System.ComponentModel.CancelEventArgs e){
-            //ControlSignal.Stop();
+            ControlSignal.Stop();
         }
 
         private void MenuClickItem (object sender, RoutedEventArgs e){

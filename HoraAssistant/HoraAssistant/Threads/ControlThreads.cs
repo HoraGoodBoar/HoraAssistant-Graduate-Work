@@ -30,5 +30,8 @@ namespace HoraAssistant{
                 ArrThread.Remove(name);
             }
         }
+        public static void Clear() {
+            ArrThread["XMLLoad"].Abort();
+        }
     }
 }

@@ -5,9 +5,10 @@ using System.Text;
 
 namespace HoraAssistant{
     public static class EventData{
-        public static List<Event.EventModel> Events = new List<Event.EventModel>();
+        public static List<EventModel> Events = new List<EventModel>();
         public static List<string> NameEvents = new List<string>();
         public static int CountEvents { get { return Events.Count; } }
+        public static int CountTrue = 0;
         
         public static bool Contains(string Name) {
             bool answer = false;
@@ -28,17 +29,10 @@ namespace HoraAssistant{
             return answer;
         }
         public static void LoadEvents() {
-            Events.Add( new Event.EventModel( "Dima","Lol",new List<string>() { "Da","Lo"}));
-            Events.Add(new Event.EventModel("asdsad", "Lol", new List<string>() { "Da", "Ld", "Lo", "Lo" }));
-            Events.Add(new Event.EventModel("Dimssa", "Lol", new List<string>() { "Da", "Lo", "Dl" }));
-            Events.Add(new Event.EventModel("Dimsadsada", "Lol", new List<string>() { "Da", "Ld", "Lo", "Lo", "Lo" }));
-            Events.Add(new Event.EventModel("sadsadDima", "Lol", new List<string>() { "Da", "Ld", "Lo", "Lo", "Lo" }));
+            XMLControl.LoadFileEvents();
         }
         public static void LoadNameEvents() {
-            NameEvents.Add("Da");
-            NameEvents.Add("Lo");
-            NameEvents.Add("Dl");
-            NameEvents.Add("Ld");
+            NameEvents.Add("Відкрити в Chrome");
         }
     }
 }

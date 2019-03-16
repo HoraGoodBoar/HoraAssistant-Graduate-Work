@@ -36,7 +36,7 @@
             <Button x:Name="BtnAdd" Style="{StaticResource MainStyle}" Content="Додати" Grid.Row="2" Click="BtnAddClick"/>
         </Grid>
 
-        <Grid Grid.Column="1">
+        <Grid  Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.1*"/>
                 <RowDefinition />
