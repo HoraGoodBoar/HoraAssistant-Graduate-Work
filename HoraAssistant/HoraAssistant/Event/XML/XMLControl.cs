@@ -22,6 +22,7 @@ namespace HoraAssistant{
                             switch (root.ChildNodes[i].ChildNodes[j].Attributes["Name"].Value.ToString()){
                                 case "Відкрити в Chrome": { OpenURLChromeControl.LoadOpenURLChromeForXML(ref Event, root.ChildNodes[i].ChildNodes[j]); } break;
                                 case "Виключити/Деактивувати ПК": {CMDControl.LoadOpenURLChromeForXML(ref Event, root.ChildNodes[i].ChildNodes[j]); } break;
+                                case "Відкрити файл": { OpenFileControl.LoadOpenURLChromeForXML(ref Event, root.ChildNodes[i].ChildNodes[j]); } break;
                             }
                         }
                         EventData.Events.Add(Event);

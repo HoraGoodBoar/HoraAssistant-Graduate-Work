@@ -40,6 +40,7 @@ namespace HoraAssistant{
                 switch (ComboBoxNameEvents.SelectedValue){
                     case "Відкрити в Chrome": { task= OpenURLChromeControl.LoadParameters(ref GridInfoEvent); } break;
                     case "Виключити/Деактивувати ПК": { task = CMDControl.LoadParameters(ref GridInfoEvent); } break;
+                    case "Відкрити файл": { task = OpenFileControl.LoadParameters(ref GridInfoEvent); } break;
                 }
                 if(task!=null)
                     PageAddEventData.AddStorage.Tasks.Add(task);
@@ -58,6 +59,7 @@ namespace HoraAssistant{
                 switch (ComboBoxNameEvents.SelectedValue) {
                     case "Відкрити в Chrome": { OpenURLChromeControl.GetGrid(ref GridInfoEvent); } break;
                     case "Виключити/Деактивувати ПК": { CMDControl.GetGrid(ref GridInfoEvent); } break;
+                    case "Відкрити файл": {OpenFileControl.GetGrid(ref GridInfoEvent); } break;
                 }
             }
         }

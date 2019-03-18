@@ -9,11 +9,11 @@ using System.Xml;
 
 namespace HoraAssistant{
     public class OpenURLChrome : ITaskFather {
-        public string PathMusic = "";
+        public string PathURL = "";
         public string Start(){
             string answer = "False";
             try{
-                System.Diagnostics.Process.Start(PathMusic);
+                System.Diagnostics.Process.Start(PathURL);
                 answer= "True";
             }
             catch {}
@@ -31,11 +31,14 @@ namespace HoraAssistant{
             task.Attributes.Append(NameAtribute);
 
             XmlElement parameters = xDoc.CreateElement("PathURL");
-            parameters.InnerText = PathMusic;
-
+            parameters.InnerText = PathURL;
             task.AppendChild(parameters);
 
             return task;
+        }
+
+        public string GetValueTask(){
+            return PathURL;
         }
     }
 }

@@ -1,0 +1,30 @@
+﻿<Page x:Class="HoraAssistant.Help"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HoraAssistant"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Help">
+	<Page.Resources>
+		<Style x:Name="MainStyle" x:Key="MainStyle">
+			<Setter Property="Control.Background" Value="White" />
+			<Setter Property="Control.Foreground" Value="DarkGreen" />
+			<Setter Property="Control.FontSize" Value="14" />
+			<Setter Property="Control.FontWeight" Value="Bold" />
+		</Style>
+	</Page.Resources>
+	<Grid>
+		<StackPanel Style="{StaticResource MainStyle}">
+			<TextBox TextWrapping="Wrap" IsEnabled="False" Style="{StaticResource MainStyle}" Text="- Якщо програма не реагує на запис даних з мікрофона, перевірьте в вкладці Налаштування, чи правильно вибраний мікрофон!"/>
+			<TextBox TextWrapping="Wrap" IsEnabled="False" Style="{StaticResource MainStyle}" Text="- Якщо програма записує звукі, але не переводить їх в слова, тоді потрібно переконатися, що ви підключенні в мережу Інтернет, та вимовляєте слова чітко!"/>
+			<TextBox TextWrapping="Wrap" IsEnabled="False" Style="{StaticResource MainStyle}" Text="- Якщо програма жахливо записує звукі, це може бути через високий шум, тому в вкладці Налаштування, налаштуйте рівень записування, та говоріть голосніше!"/>
+			<TextBox TextWrapping="Wrap" IsEnabled="False" Style="{StaticResource MainStyle}" Text="- Якщо програма перевела в слова, але не виконало певні задачі, для цього потрібно переконатися, що переклад цього слова, строго відповідає вашому, на яке записані події, якщо відрізняється великою, чи маленькою літерою, вона не виконається!"/>
+			<TextBox TextWrapping="Wrap" IsEnabled="False" Style="{StaticResource MainStyle}" Text="- Якщо програма при виконані завдання, пропускає або робить з помилками, перевірьте чи працюючі параметри задачі, можливо ви видалили файл, або сайт який ви хочите відкрити вже видалений, уважно передивіться параметри!"/>
+			<TextBox TextWrapping="Wrap" IsEnabled="False" Style="{StaticResource MainStyle}" Text="- Якщо ви бажаєте добавити дію, переходим в вкладку Додати дію, тоді вписуєм слово, на яке завдання будуть реагувати, маленький опис, щоб подалі вам було зрозуміло, що саме ви хотіли. Далі з випадаючого списку, вибираємо дію, та після цього вписуємо всі параметри для її, нажимаємо на кнопку Добавити задачу, та вона появиться зліва у таблиці. Якщо ви випадково добавили дію, нажміть на галочку тої дії, позначте її, та натисніть кнопку Видалити. Після всіх цих дій вам потрібно нажати кнопку Добавити, все, готово!"/>
+			<TextBox TextWrapping="Wrap" IsEnabled="False" Style="{StaticResource MainStyle}" Text="- Якщо ви бажаєте видали якусь дію, або подивитися, що саме вона робить, вам потрібно нажати на вкладку Дії, зліва будуть видні всі дії, якщо ви розгорнете одну з них, вам покажуть всі поля і значення в їй. Якщо ви хочите її видали, нажміть мишкою два рази, та підтвердіть видалення!"/>
+			<TextBox TextWrapping="Wrap" IsEnabled="False" Style="{StaticResource MainStyle}" Text="- На вкладці Головна, показано скільки дій виконано за час роботи програми, скільки було спроб запису звуків, час роботи програми. В правому боці видно всі переклади, та історію виконаних дій та нерозпізнаних!"/>
+		</StackPanel>
+	</Grid>
+</Page>

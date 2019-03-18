@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\dimak\Documents\GitHub\HoraAssistant\HoraAssistant\HoraAssistant\App.xaml
-32106778183
+61478015924
 
-32810606650
+37456883848
 131648042782
-FatherPage.xaml;PagesWPF\AddEvent\AddEvent.xaml;PagesWPF\Main\Main.xaml;
+FatherPage.xaml;PagesWPF\AddEvent\AddEvent.xaml;PagesWPF\Events\AllEvents.xaml;PagesWPF\Help\Help.xaml;PagesWPF\Main\Main.xaml;PagesWPF\Setup\Setup.xaml;
 
 False
 

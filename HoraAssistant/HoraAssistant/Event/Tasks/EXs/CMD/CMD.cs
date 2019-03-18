@@ -9,6 +9,7 @@ namespace HoraAssistant{
     class CMD : ITaskFather{
         public string GetNameTask { get { return "Виключити/Деактивувати ПК"; } }
         public string ParameterCMD = "";
+
         public XmlElement SaveToXML(ref XmlDocument xDoc){
             XmlElement task = xDoc.CreateElement("task");
 
@@ -32,6 +33,10 @@ namespace HoraAssistant{
             }
             catch(Exception s) { MessageBox.Show(s.Message); }
             return answer;
+        }
+
+        public string GetValueTask(){
+            return ParameterCMD;
         }
     }
 }

@@ -73,6 +73,8 @@
     <Compile Include="Event\EventModel.cs" />
     <Compile Include="Event\Tasks\EXs\CMD\CMD.cs" />
     <Compile Include="Event\Tasks\EXs\CMD\CMDControl.cs" />
+    <Compile Include="Event\Tasks\EXs\OpentFile\OpenFile.cs" />
+    <Compile Include="Event\Tasks\EXs\OpentFile\OpenFileControl.cs" />
     <Compile Include="Event\Tasks\EXs\OpenURLChrome\OpenURLChrome.cs" />
     <Compile Include="Event\Tasks\EXs\OpenURLChrome\OpenURLChromeControl.cs" />
     <Compile Include="Event\Tasks\ITaskFather.cs" />
@@ -84,10 +86,19 @@
       <DependentUpon>AddEvent.xaml</DependentUpon>
     </Compile>
     <Compile Include="PagesWPF\AddEvent\PageAddEventData.cs" />
+    <Compile Include="PagesWPF\Events\AllEvents.xaml.cs">
+      <DependentUpon>AllEvents.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PagesWPF\Help\Help.xaml.cs">
+      <DependentUpon>Help.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PagesWPF\Main\Main.xaml.cs">
       <DependentUpon>Main.xaml</DependentUpon>
     </Compile>
     <Compile Include="PagesWPF\Main\PageMainData.cs" />
+    <Compile Include="PagesWPF\Setup\Setup.xaml.cs">
+      <DependentUpon>Setup.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Threads\ControlThreads.cs" />
     <Page Include="FatherPage.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -105,7 +116,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PagesWPF\Events\AllEvents.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PagesWPF\Help\Help.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PagesWPF\Main\Main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PagesWPF\Setup\Setup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

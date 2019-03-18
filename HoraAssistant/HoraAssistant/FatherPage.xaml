@@ -18,6 +18,6 @@
             <MenuItem Header="Налаштування" Click="MenuClickItem"/>
             <MenuItem Header="Допомога"     Click="MenuClickItem"/>
         </Menu>
-        <Frame Grid.Row="1" x:Name="PanelPages" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+		<Frame Grid.Row="1" x:Name="PanelPages" Grid.ColumnSpan="2" Grid.RowSpan="2" JournalOwnership="UsesParentJournal"/>
     </Grid>
 </Window>

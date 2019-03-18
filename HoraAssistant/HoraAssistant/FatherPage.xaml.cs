@@ -19,6 +19,7 @@ namespace HoraAssistant{
             EventControl.LoadData();
             ControlSignal.Start();
             TaskBarControl.StartTaskBar();
+            PanelPages.Content = new Main();
         }
 
         private void ClosingAssistant(object sender, System.ComponentModel.CancelEventArgs e){
@@ -37,6 +38,9 @@ namespace HoraAssistant{
             switch ((sender as MenuItem).Header) {
                 case "Головна": { PanelPages.Content = new Main(); }break;
                 case "Додати дію": { PanelPages.Content = new AddEvent(); } break;
+                case "Дії": { PanelPages.Content = new AllEvents(); } break;
+                case "Налаштування": { PanelPages.Content = new Setup(); } break;
+                case "Допомога": { PanelPages.Content = new Help(); } break;
             }
         }
     }

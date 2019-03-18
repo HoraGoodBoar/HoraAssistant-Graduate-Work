@@ -10,6 +10,7 @@ namespace HoraAssistant{
         public static string FolderNameFile="Sounds/";
         public static int CountSound = 0;
         public static bool IsRecording = false;
+        public static bool IsWork = true;
         public static WaveIn Listener = null;
         public static WaveFileWriter Writer=null;
         

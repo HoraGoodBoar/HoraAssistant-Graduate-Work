@@ -19,11 +19,11 @@ namespace HoraAssistant{
             menu.Children.Add(panel);
         }
         public static object LoadParameters(ref Grid menu){
-            return new OpenURLChrome() { PathMusic = ((menu.Children[0] as StackPanel).Children[1] as TextBox).Text };
+            return new OpenURLChrome() { PathURL = ((menu.Children[0] as StackPanel).Children[1] as TextBox).Text };
         }
         public static void LoadOpenURLChromeForXML(ref EventModel Event, XmlNode node) {
             OpenURLChrome task = new OpenURLChrome();
-            task.PathMusic = node.ChildNodes[0].InnerText.ToString();
+            task.PathURL = node.ChildNodes[0].InnerText.ToString();
             Event.Tasks.Add(task);
         }
     }

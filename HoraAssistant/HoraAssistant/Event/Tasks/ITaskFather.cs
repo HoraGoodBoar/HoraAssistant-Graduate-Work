@@ -10,5 +10,6 @@ namespace HoraAssistant{
         string Start();
         string GetNameTask{ get; }
         XmlElement SaveToXML(ref XmlDocument xDoc);
+        string GetValueTask();
     }
 }

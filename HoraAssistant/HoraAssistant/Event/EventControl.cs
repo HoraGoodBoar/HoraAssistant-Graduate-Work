@@ -16,5 +16,10 @@ namespace HoraAssistant{
             }
             return new List<string>();
         }
+        public static void DeleteFromName(string NameEvent) {
+            for (int i = 0; i < EventData.Events.Count; ++i)
+                if (EventData.Events[i].Name == NameEvent)
+                    EventData.Events.RemoveAt(i--);
+        }
     }
 }
