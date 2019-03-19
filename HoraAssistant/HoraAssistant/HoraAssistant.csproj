@@ -43,6 +43,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Speech" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
@@ -77,6 +78,9 @@
     <Compile Include="Event\Tasks\EXs\OpentFile\OpenFileControl.cs" />
     <Compile Include="Event\Tasks\EXs\OpenURLChrome\OpenURLChrome.cs" />
     <Compile Include="Event\Tasks\EXs\OpenURLChrome\OpenURLChromeControl.cs" />
+    <Compile Include="Event\Tasks\EXs\Talk\Talk.cs" />
+    <Compile Include="Event\Tasks\EXs\Talk\TalkControl.cs" />
+    <Compile Include="Event\Tasks\EXs\Talk\TalkData.cs" />
     <Compile Include="Event\Tasks\ITaskFather.cs" />
     <Compile Include="Event\XML\XMLControl.cs" />
     <Compile Include="Event\XML\XMLData.cs" />

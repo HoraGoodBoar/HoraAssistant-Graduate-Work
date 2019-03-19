@@ -29,6 +29,7 @@ namespace HoraAssistant{
                 XMLControl.SaveToFileEvent(PageAddEventData.AddStorage);
                 TextBoxName.BorderBrush = null;
                 StackPanelTask.Children.Clear();
+                PageAddEventData.AddStorage = new EventModel();
             }
             else
                 TextBoxName.BorderBrush = Brushes.Red;
@@ -41,6 +42,7 @@ namespace HoraAssistant{
                     case "Відкрити в Chrome": { task= OpenURLChromeControl.LoadParameters(ref GridInfoEvent); } break;
                     case "Виключити/Деактивувати ПК": { task = CMDControl.LoadParameters(ref GridInfoEvent); } break;
                     case "Відкрити файл": { task = OpenFileControl.LoadParameters(ref GridInfoEvent); } break;
+                    case "Говорити": { task = TalkControl.LoadParameters(ref GridInfoEvent); } break;
                 }
                 if(task!=null)
                     PageAddEventData.AddStorage.Tasks.Add(task);
@@ -60,6 +62,7 @@ namespace HoraAssistant{
                     case "Відкрити в Chrome": { OpenURLChromeControl.GetGrid(ref GridInfoEvent); } break;
                     case "Виключити/Деактивувати ПК": { CMDControl.GetGrid(ref GridInfoEvent); } break;
                     case "Відкрити файл": {OpenFileControl.GetGrid(ref GridInfoEvent); } break;
+                    case "Говорити": { TalkControl.GetGrid(ref GridInfoEvent); } break;
                 }
             }
         }

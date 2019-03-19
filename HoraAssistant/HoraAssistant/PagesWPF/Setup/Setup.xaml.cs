@@ -23,6 +23,8 @@ namespace HoraAssistant{
                 ChoiceMicrophone.Items.Add(DataSignal.Devices[i].FriendlyName);
             ChoiceMicrophone.SelectedIndex = DataSignal.ChoiceDeviceIndex;
             SliderValue.Value = DataSignal.LevelDevice;
+            SliderValueAssistant.Value = TalkData.Volume;
+            SliderValueRate.Value = TalkData.Rate;
             WorkCheckBox.IsChecked = DataAssistant.IsWork;
             WorkCheckBox.Checked += WorkCheckBoxChecked;
             WorkCheckBox.Unchecked += WorkCheckBoxChecked;
@@ -41,6 +43,16 @@ namespace HoraAssistant{
             DataAssistant.IsWork = (bool)WorkCheckBox.IsChecked;
             if (!DataAssistant.IsWork)
                 ControlRecording.StopRecording();
+        }
+
+        private void SliderValueAssistantValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e){
+            TalkData.Volume = Convert.ToInt32(SliderValueAssistant.Value);
+            LblValueAssistant.Content = TalkData.Volume.ToString();
+        }
+
+        private void SliderValueRateValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e){
+            TalkData.Rate = Convert.ToInt32(SliderValueRate.Value);
+            LblValueRate.Content = TalkData.Rate.ToString();
         }
     }
 }

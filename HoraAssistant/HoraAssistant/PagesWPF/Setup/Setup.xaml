@@ -49,6 +49,30 @@
 				<CheckBox Grid.Column="1" x:Name="WorkCheckBox" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 				<TextBox Grid.Column="2" FontSize="14" Margin="5,0,0,0" TextWrapping="Wrap" Text="Даєте дозвід на обробляня звуків програмую, для її роботи?" Style="{StaticResource MainStyle}"/>
 			</Grid>
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="0.8*"/>
+					<ColumnDefinition Width="0.15*"/>
+					<ColumnDefinition Width="0.6*"/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<Label Grid.Column="0" Content="Рівень голосу асистента : " Style="{StaticResource MainStyle}"/>
+				<Label Grid.Column="1" x:Name="LblValueAssistant"  Style="{StaticResource MainStyle}" />
+				<Slider Grid.Column="2" x:Name="SliderValueAssistant" Minimum="0" Maximum="100" VerticalAlignment="Center"  ValueChanged="SliderValueAssistantValueChanged"/>
+				<TextBox Grid.Column="3" FontSize="14" Margin="5,0,0,0" TextWrapping="Wrap" Text="Потрібно підібрати рівень голосу, 0-100 від поточного рівня звуку на комп'ютері" Style="{StaticResource MainStyle}"/>
+			</Grid>
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="1.2*"/>
+					<ColumnDefinition Width="0.15*"/>
+					<ColumnDefinition Width="0.4*"/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<Label Grid.Column="0" Content="Швидкість розмови асистента : " Style="{StaticResource MainStyle}"/>
+				<Label Grid.Column="1" x:Name="LblValueRate"  Style="{StaticResource MainStyle}" />
+				<Slider Grid.Column="2" x:Name="SliderValueRate" Minimum="-10" Maximum="10" VerticalAlignment="Center"  ValueChanged="SliderValueRateValueChanged"/>
+				<TextBox Grid.Column="3" FontSize="14" Margin="5,0,0,0" TextWrapping="Wrap" Text="Потрібно підібрати рівень швидкості, -10 до 10" Style="{StaticResource MainStyle}"/>
+			</Grid>
 		</StackPanel>
 	</Grid>
 </Page>

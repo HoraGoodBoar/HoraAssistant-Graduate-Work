@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <Events>
   <event Name="Привет" Description="">
-    <task Name="Виключити/Деактивувати ПК">
-      <ParameterCMD>/a</ParameterCMD>
+    <task Name="Говорити">
+      <Word>Привет</Word>
     </task>
   </event>
   <event Name="Наташа" Description="">
-    <task Name="Відкрити в Chrome">
-      <PathURL>https://24tv.ua/resources/photos/news/201206/225508_433022.jpg</PathURL>
-    </task>
-    <task Name="Відкрити в Chrome">
-      <PathURL>https://i.ytimg.com/vi/20BKacxCxxE/hqdefault.jpg</PathURL>
-    </task>
-    <task Name="Відкрити файл">
-      <PathFile>C:\Users\dimak\Downloads\1b586d5d-2170-41f2-8b0f-3db4ae93c1f4.jpg</PathFile>
+    <task Name="Говорити">
+      <Word>Hello</Word>
     </task>
   </event>
 </Events>

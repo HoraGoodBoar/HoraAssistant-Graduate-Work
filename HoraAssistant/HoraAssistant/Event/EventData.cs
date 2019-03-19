@@ -35,6 +35,14 @@ namespace HoraAssistant{
             NameEvents.Add("Відкрити в Chrome");
             NameEvents.Add("Виключити/Деактивувати ПК");
             NameEvents.Add("Відкрити файл");
+            NameEvents.Add("Говорити");
+        }
+        public static List<int> IndexsContains(string Name) {
+            List<int> indexs = new List<int>();
+            for (int i = 0; i < Events.Count; ++i)
+                if (Events[i].Name == Name)
+                    indexs.Add(i);
+            return indexs;
         }
     }
 }

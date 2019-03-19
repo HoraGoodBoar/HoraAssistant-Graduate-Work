@@ -12,7 +12,11 @@ namespace HoraAssistant{
         public static List<string> StartEvent(string NameEvent) {
             if (EventData.Contains(NameEvent)){
                 ++EventData.CountTrue;
-                return EventData.Events[EventData.IndexContains(NameEvent)].Start();
+                List<string> answer = new List<string>();
+                List<int> indexs = EventData.IndexsContains(NameEvent);
+                for (int i = 0; i < indexs.Count; ++i)
+                    answer.AddRange(EventData.Events[indexs[i]].Start());
+                return answer;
             }
             return new List<string>();
         }
