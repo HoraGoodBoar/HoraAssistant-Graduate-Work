@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <Events>
-  <event Name="Привет" Description="">
-    <task Name="Говорити">
-      <Word>Привет</Word>
+  <event Name="Дима" Description="">
+    <task Name="Відкрити в Chrome">
+      <PathURL>https://github.com/HoraGoodBoar</PathURL>
     </task>
-  </event>
-  <event Name="Наташа" Description="">
     <task Name="Говорити">
-      <Word>Hello</Word>
+      <Word>Привет Босс</Word>
     </task>
   </event>
 </Events>
