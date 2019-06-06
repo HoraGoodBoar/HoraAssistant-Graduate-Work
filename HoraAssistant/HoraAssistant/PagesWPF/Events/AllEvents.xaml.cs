@@ -38,6 +38,7 @@ namespace HoraAssistant{
                 }
                 MainStackEvents.Children.Add(FatherItem);
             }
+            MainStackEvents.UpdateLayout();
         }
 
         private void FatherItem_Expanded(object sender, RoutedEventArgs e){
@@ -59,6 +60,8 @@ namespace HoraAssistant{
                 XMLControl.DeleteEvent((sender as TreeViewItem).Header.ToString());
                 EventControl.DeleteFromName((sender as TreeViewItem).Header.ToString());
                 MainStackEvents.Children.Clear();
+                InfoStackEvents.Children.Clear();
+                InfoStackEvents.UpdateLayout();
                 Start();
             }
         }

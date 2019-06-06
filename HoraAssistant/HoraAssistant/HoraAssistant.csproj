@@ -74,6 +74,8 @@
     <Compile Include="Event\EventModel.cs" />
     <Compile Include="Event\Tasks\EXs\CMD\CMD.cs" />
     <Compile Include="Event\Tasks\EXs\CMD\CMDControl.cs" />
+    <Compile Include="Event\Tasks\EXs\Notification\Notification.cs" />
+    <Compile Include="Event\Tasks\EXs\Notification\NotificationControl.cs" />
     <Compile Include="Event\Tasks\EXs\OpentFile\OpenFile.cs" />
     <Compile Include="Event\Tasks\EXs\OpentFile\OpenFileControl.cs" />
     <Compile Include="Event\Tasks\EXs\OpenURLChrome\OpenURLChrome.cs" />
@@ -165,5 +167,6 @@
   <ItemGroup>
     <Resource Include="H.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

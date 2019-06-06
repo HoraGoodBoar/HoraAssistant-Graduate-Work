@@ -1,11 +1,3 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <Events>
-  <event Name="Дима" Description="">
-    <task Name="Відкрити в Chrome">
-      <PathURL>https://github.com/HoraGoodBoar</PathURL>
-    </task>
-    <task Name="Говорити">
-      <Word>Привет Босс</Word>
-    </task>
-  </event>
 </Events>

@@ -28,6 +28,25 @@ namespace HoraAssistant{
             TextBoxEvent.Text = EventData.CountTrue.ToString();
             TextBoxSound.Text = DataRecognition.CountRequest.ToString();
             TextBoxTime.Text  = DateTime.Parse((DateTime.Now - PageMainData.StartWorkTime).ToString()).ToLongTimeString();
+            for (int i = 0; i < EventData.Events.Count; ++i) {
+                for (int j = 0; j < EventData.Events[i].Tasks.Count; ++j)
+                {
+                    if ((EventData.Events[i].Tasks[j] is Notification))
+                    {
+                        if ((EventData.Events[i].Tasks[j] as Notification).IsTalk == false)
+                        {
+                            if ( (EventData.Events[i].Tasks[j] as Notification).Day >= DateTime.Now.Day   &&
+                                 (EventData.Events[i].Tasks[j] as Notification).Hour == DateTime.Now.Hour &&
+                                 (EventData.Events[i].Tasks[j] as Notification).Minute == DateTime.Now.Minute 
+                               )
+                            {
+                                (EventData.Events[i].Tasks[j] as Notification).Start();
+                                (EventData.Events[i].Tasks[j] as Notification).IsTalk = true;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

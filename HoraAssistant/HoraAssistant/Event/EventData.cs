@@ -36,6 +36,7 @@ namespace HoraAssistant{
             NameEvents.Add("Виключити/Деактивувати ПК");
             NameEvents.Add("Відкрити файл");
             NameEvents.Add("Говорити");
+            NameEvents.Add("Нагадати");
         }
         public static List<int> IndexsContains(string Name) {
             List<int> indexs = new List<int>();

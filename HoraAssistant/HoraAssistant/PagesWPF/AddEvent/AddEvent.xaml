@@ -13,6 +13,7 @@
             <Setter Property="Control.Foreground" Value="DarkGreen" />
             <Setter Property="Control.FontSize" Value="20" />
             <Setter Property="Control.FontWeight" Value="Bold" />
+
         </Style>
     </Page.Resources>
     <Grid >
@@ -44,7 +45,7 @@
             </Grid.RowDefinitions>
             <ComboBox x:Name="ComboBoxNameEvents" SelectionChanged="ComboBoxNameEventsSelectionChanged" Style="{StaticResource MainStyle}"/>
             <Grid x:Name="GridInfoEvent" Style="{StaticResource MainStyle}" Grid.Row="1"/>
-            <Button x:Name="BtnAddTask" Style="{StaticResource MainStyle}" Grid.Row="2" Content="Добавити задачу" Click="BtnAddTaskClick"/>
+            <Button x:Name="BtnAddTask" Style="{StaticResource MainStyle}"  Grid.Row="2" Content="Добавити задачу" Click="BtnAddTaskClick"/>
         </Grid>
 
         <Grid Grid.Column="2">
