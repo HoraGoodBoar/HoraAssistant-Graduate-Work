@@ -10,6 +10,7 @@ namespace HoraAssistant{
             EventData.LoadNameEvents();
         }
         public static List<string> StartEvent(string NameEvent) {
+           
             if (EventData.Contains(NameEvent)){
                 ++EventData.CountTrue;
                 List<string> answer = new List<string>();

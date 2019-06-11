@@ -38,6 +38,10 @@ namespace HoraAssistant{
                 }
                 MainStackEvents.Children.Add(FatherItem);
             }
+            if (EventData.Events.Count == 0) {
+                InfoStackEvents.Children.Clear();
+                InfoStackEvents.UpdateLayout();
+            }
             MainStackEvents.UpdateLayout();
         }
 

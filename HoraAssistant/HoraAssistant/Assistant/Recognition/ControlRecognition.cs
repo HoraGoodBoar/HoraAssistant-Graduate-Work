@@ -12,7 +12,8 @@ namespace HoraAssistant{
         }
         public static void StartTranslate() {
             string word = Start(DataAssistant.FolderNameFile+ (DataAssistant.CountSound - 1).ToString() + DataAssistant.NameFileWriter)[0];
-            if (word != "#?#" && word != " "){
+
+            if (ConstStandartEvent.HaveOrNo(word) == false  && word != "#?#" && word != " "){
                 string log = "";
                 if(EventData.Contains(word)){
                     List<string> answers = EventControl.StartEvent(word);

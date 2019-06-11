@@ -25,6 +25,7 @@ namespace HoraAssistant{
             }
         }
         public static void SetValuesWriter() {
+
             if (Listener == null)
                 SetValuesListener();
             if (Writer == null)

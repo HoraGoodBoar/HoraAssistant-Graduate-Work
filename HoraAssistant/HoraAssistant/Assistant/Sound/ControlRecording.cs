@@ -10,7 +10,7 @@ namespace HoraAssistant{
             if (!DataAssistant.IsRecording)
                 RecordingSound.Start();
         }
-        public static void StopRecording(){
+        public static void StopRecording() {
             if (DataAssistant.IsRecording){
                 RecordingSound.Stop();
             }

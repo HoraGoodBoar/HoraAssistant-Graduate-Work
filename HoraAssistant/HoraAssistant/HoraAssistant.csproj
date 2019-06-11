@@ -69,6 +69,7 @@
     <Compile Include="Assistant\Sound\ControlRecording.cs" />
     <Compile Include="Assistant\Sound\DataAssistant.cs" />
     <Compile Include="Assistant\Sound\RecordingSound.cs" />
+    <Compile Include="Event\ConstStandartEvent.cs" />
     <Compile Include="Event\EventControl.cs" />
     <Compile Include="Event\EventData.cs" />
     <Compile Include="Event\EventModel.cs" />

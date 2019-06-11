@@ -24,8 +24,11 @@ namespace HoraAssistant{
             if(DataAssistant.IsWork)
                 if (DataSignal.ChoiceDeviceIndex!=-1){
                     if ((int)(Math.Round(DataSignal.Devices[DataSignal.ChoiceDeviceIndex].AudioMeterInformation.MasterPeakValue * 100)) >= DataSignal.LevelDevice)
+                    {
                         ControlRecording.StartRecording();
-                    else{
+                    }
+                    else
+                    {
                         ControlRecording.StopRecording();
                     }
                 }
