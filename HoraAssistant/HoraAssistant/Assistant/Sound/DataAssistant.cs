@@ -20,8 +20,8 @@ namespace HoraAssistant{
                     DeviceNumber = 0,
                     WaveFormat = new WaveFormat(16000, 1)
                 };
-                Listener.RecordingStopped += new EventHandler<NAudio.Wave.StoppedEventArgs>(RecordingSound.Listener_RecordingStopped);
                 Listener.DataAvailable += RecordingSound.Listener_DataAvailable;
+                Listener.RecordingStopped += new EventHandler<NAudio.Wave.StoppedEventArgs>(RecordingSound.Listener_RecordingStopped);
             }
         }
         public static void SetValuesWriter() {

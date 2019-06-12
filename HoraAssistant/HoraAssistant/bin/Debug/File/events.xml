@@ -1,3 +1,22 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <Events>
+  <event Name="дипломная" Description="">
+    <task Name="Говорити">
+      <Word>Удачи Бро!!!</Word>
+    </task>
+    <task Name="Відкрити файл">
+      <PathFile>D:\GitHub\HoraAssistant\HoraAssistant\HoraAssistant.sln</PathFile>
+    </task>
+    <task Name="Відкрити файл">
+      <PathFile>D:\GitHub\HoraAssistant\HoraAssistant\HoraAssistant.sln</PathFile>
+    </task>
+    <task Name="Відкрити в Chrome">
+      <PathURL>https://www.youtube.com/watch?v=um_3zQxn128</PathURL>
+    </task>
+  </event>
+  <event Name="Привет" Description="">
+    <task Name="Говорити">
+      <Word>Здаров Братан!</Word>
+    </task>
+  </event>
 </Events>

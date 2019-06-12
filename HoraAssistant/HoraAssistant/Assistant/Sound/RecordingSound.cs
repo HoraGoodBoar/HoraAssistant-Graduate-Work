@@ -4,14 +4,17 @@ using System.Linq;
 using System.Text;
 using NAudio;
 using NAudio.Wave;
+using System.Configuration;
 
 namespace HoraAssistant{
     public static class RecordingSound {
         public static void Start() {
             DataAssistant.SetValuesListener();
             DataAssistant.SetValuesWriter();
-            DataAssistant.Listener.StartRecording();
             DataAssistant.IsRecording = true;
+
+            DataAssistant.Listener.StartRecording();
+            
         }
         public static void Stop() {
             DataAssistant.Listener.StopRecording();

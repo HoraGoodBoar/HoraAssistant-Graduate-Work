@@ -16,10 +16,7 @@ namespace HoraAssistant{
     public partial class FatherPage : Window{
         public FatherPage(){
             InitializeComponent();
-            EventControl.LoadData();
-            ControlSignal.Start();
-            TaskBarControl.StartTaskBar();
-            PanelPages.Content = new Main();
+           
         }
 
         private void ClosingAssistant(object sender, System.ComponentModel.CancelEventArgs e){
@@ -42,6 +39,13 @@ namespace HoraAssistant{
                 case "Налаштування": { PanelPages.Content = new Setup(); } break;
                 case "Допомога": { PanelPages.Content = new Help(); } break;
             }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e){
+            EventControl.LoadData();
+            TaskBarControl.StartTaskBar();
+            PanelPages.Content = new Main();
+            ControlSignal.Start();
         }
     }
 }

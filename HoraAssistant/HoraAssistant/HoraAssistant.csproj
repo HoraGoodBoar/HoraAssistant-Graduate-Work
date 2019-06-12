@@ -66,6 +66,7 @@
     <Compile Include="Assistant\Signal\ControlSignal.cs" />
     <Compile Include="Assistant\Signal\DataSignal.cs" />
     <Compile Include="Assistant\Signal\Parser.cs" />
+    <Compile Include="Assistant\Sound\Class1.cs" />
     <Compile Include="Assistant\Sound\ControlRecording.cs" />
     <Compile Include="Assistant\Sound\DataAssistant.cs" />
     <Compile Include="Assistant\Sound\RecordingSound.cs" />

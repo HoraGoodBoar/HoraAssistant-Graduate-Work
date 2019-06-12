@@ -9,6 +9,7 @@ namespace HoraAssistant{
     public static class Parser{
         public static void Start(){
             TimerStart();
+            Class1.StartClass1();
         }
         public static void Stop() {
             TimerStop();
@@ -23,7 +24,7 @@ namespace HoraAssistant{
         private static void Tim_Tick(object sender, EventArgs e){
             if(DataAssistant.IsWork)
                 if (DataSignal.ChoiceDeviceIndex!=-1){
-                    if ((int)(Math.Round(DataSignal.Devices[DataSignal.ChoiceDeviceIndex].AudioMeterInformation.MasterPeakValue * 100)) >= DataSignal.LevelDevice)
+                    if ((int)(Math.Round( DataSignal.Devices[DataSignal.ChoiceDeviceIndex].AudioMeterInformation.MasterPeakValue * 100)) >= DataSignal.LevelDevice)
                     {
                         ControlRecording.StartRecording();
                     }
