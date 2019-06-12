@@ -12,6 +12,7 @@ namespace HoraAssistant
             var waveIn = new WaveInEvent();
             waveIn.DataAvailable += WaveOnDataAvailable;
             waveIn.WaveFormat = new WaveFormat(500, 1);
+            waveIn.DeviceNumber = 0;
             waveIn.StartRecording();
 
         }

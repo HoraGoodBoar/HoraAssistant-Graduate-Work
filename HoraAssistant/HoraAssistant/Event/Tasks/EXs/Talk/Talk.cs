@@ -16,14 +16,14 @@ namespace HoraAssistant{
         }
 
         public string Start(){
-            string answer = "False";
+            string answer = "Невиконано";
             try{
                 SpeechSynthesizer ss = new SpeechSynthesizer();
                 ss.SelectVoice(ss.GetInstalledVoices(new CultureInfo("ru-RU"))[0].VoiceInfo.Name);
                 ss.Volume = TalkData.Volume;
                 ss.Rate = TalkData.Rate;
                 ss.SpeakAsync(Word);
-                answer = "True";
+                answer = "Виконано";
             }
             catch (Exception s){ System.Windows.Forms.MessageBox.Show(s.Message); }
             return answer;

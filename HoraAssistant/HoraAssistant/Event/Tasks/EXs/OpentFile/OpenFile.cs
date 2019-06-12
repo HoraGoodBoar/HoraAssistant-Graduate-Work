@@ -33,11 +33,11 @@ namespace HoraAssistant{
         }
 
         public string Start(){
-            string answer = "False";
+            string answer = "Невиконано";
             if(OpenFileControl.FileExists(PathFile)){
                 try{
                     Process.Start(PathFile);
-                    return "True";
+                    return "Виконано";
                 }
                 catch (Exception s) {
                     MessageBox.Show(s.Message);

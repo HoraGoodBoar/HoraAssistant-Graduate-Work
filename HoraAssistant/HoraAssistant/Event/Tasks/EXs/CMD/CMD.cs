@@ -26,10 +26,10 @@ namespace HoraAssistant{
             return task;
         }
         public string Start(){
-            string answer = "False";
+            string answer = "Невиконано";
             try{
                 System.Diagnostics.Process.Start(CMDControl.Command,(ParameterCMD=="/a"? ParameterCMD:" /s /t "+ParameterCMD));
-                answer = "True";
+                answer = "Виконано";
             }
             catch(Exception s) { MessageBox.Show(s.Message); }
             return answer;

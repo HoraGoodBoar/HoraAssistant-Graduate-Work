@@ -11,10 +11,10 @@ namespace HoraAssistant{
     public class OpenURLChrome : ITaskFather {
         public string PathURL = "";
         public string Start(){
-            string answer = "False";
+            string answer = "Невиконано";
             try{
                 System.Diagnostics.Process.Start(PathURL);
-                answer= "True";
+                answer= "Виконано";
             }
             catch {}
             return answer;

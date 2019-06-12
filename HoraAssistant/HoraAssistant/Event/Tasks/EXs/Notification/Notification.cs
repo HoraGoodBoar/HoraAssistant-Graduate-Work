@@ -51,7 +51,7 @@ namespace HoraAssistant
 
         public string Start()
         {
-            string answer = "False";
+            string answer = "Невиконано";
             try
             {
                 SpeechSynthesizer ss = new SpeechSynthesizer();
@@ -59,7 +59,7 @@ namespace HoraAssistant
                 ss.Volume = TalkData.Volume;
                 ss.Rate = TalkData.Rate;
                 ss.SpeakAsync(Text);
-                answer = "True";
+                answer = "Виконано";
             }
             catch (Exception s) { MessageBox.Show(s.Message); }
             return answer;
